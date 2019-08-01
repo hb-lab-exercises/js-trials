@@ -12,12 +12,20 @@ const phoneNumbers = new Map();
 
 // Add some phone numbers to our map
 
-
+phoneNumbers.set('home', '510-867-5309');
+phoneNumbers.set('mobile', '415-555-1212');
+phoneNumbers.set('business', '415-123-4567');
 
 // ///////////////////////////////////////////////////////
 // Create User Info Display:
 
 // Add function to print account information 
+
+function printAccountInfo (name, accountNumber, businessName) {
+  console.log(`Account Holder Name:   ${name}`);
+  console.log(`Account Holder Number: ${accountNumber}`);
+  console.log(`Business Name:         ${businessName}`);
+}
 
 
 // Add function to print all addresses, including a header
