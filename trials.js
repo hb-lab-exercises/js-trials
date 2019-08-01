@@ -76,15 +76,32 @@ function showBalanceStatus (amount) {
   console.log(`Balance: $${amount}`);
 
   if (amount < 0) {
-    console.log("YOU ARE OVERDRAWN")
+    console.log("YOU ARE OVERDRAWN");
   } else if (amount < 20) {
-    console.log("Warning: You are close to zero balance")
+    console.log("Warning: You are close to zero balance");
   } else {
-    console.log("Thank you for your business")
+    console.log("Thank you for your business");
   }
 }
 
 // Add function to show transactions
+
+function showTransactions (transactionMap, balance) {
+  console.log(`Starting Balance: $${balance}`);
+
+  for (const [date, action] of transactionMap) {
+
+    let transactionType;
+
+    if (action < 0) {
+      transactionType = 'Withdrawal';
+      
+    } 
+    console.log(`Date: ${date}`);
+    console.log(`Transaction type: ${transactionType}`);
+  }
+
+}
 
 
 // ///////////////////////////////////////////////////////
