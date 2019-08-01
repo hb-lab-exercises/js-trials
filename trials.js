@@ -29,7 +29,13 @@ function printAccountInfo (name, accountNumber, businessName) {
 
 
 // Add function to print all addresses, including a header
+function showAddresses (addresses) {
+  console.log('Addresses:');
 
+  for (const address of addresses) {
+    console.log(address);
+  }
+}
 
 // Add function to print phone types and numbers
 
