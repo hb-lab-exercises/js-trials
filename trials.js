@@ -39,6 +39,14 @@ function showAddresses (addresses) {
 
 // Add function to print phone types and numbers
 
+function showPhoneNums (phoneNumbers) {
+  console.log('Phone Numbers:');
+
+  for (const [key, val] of phoneNumbers) {
+    console.log(`${key}: ${val}`);
+  }
+}
+
 
 // ///////////////////////////////////////////////////////
 // Transactions:
